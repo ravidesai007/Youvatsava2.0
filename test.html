@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Youvatsava</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Mono|Montserrat:800'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img class="logo"src="images/Logo New for Header.png"></a>
+      <div class="links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">EVENT SCHEDULE</a></li>
+          <li><a href="">EVENT SUMMARY</a></li>
+          <li><a href="">DETAILED RULES</a></li>
+          <li><a href="">GENERAL INSTRUCTIONS</a></li>
+          <li><a href="">ORGANISING COMMITEE</a></li>
+          <li><a href="http://localhost/youvatsava/Register/login.php">LOGIN</a></li>
+          <li><a href="http://localhost/youvatsava/Register/register.php">REGISTER</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+  <script  src="./script.js"></script>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
